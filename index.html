@@ -2,25 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproductor de Audio</title>
+  <title>Reproductor</title>
   <style>
-    body {
-      background: #fff;
-      font-family: sans-serif;
-      text-align: center;
-      padding: 40px;
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
+
     audio {
       width: 100%;
       max-width: 400px;
-    }
-    h2 {
-      color: deeppink;
+      filter: hue-rotate(-15deg) saturate(2);
+      accent-color: deeppink; /* Para navegadores que lo soportan */
     }
   </style>
 </head>
 <body>
-  <h2>🎶 Reproductor personalizado</h2>
   <audio controls autoplay>
     <source src="ed_Pruebas.mp3" type="audio/mpeg">
     Tu navegador no puede reproducir el audio.
